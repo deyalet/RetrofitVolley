@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface RevistaAPI {
-    @GET("https://revistas.uteq.edu.ec/ws/issues.php?{id}")
+    @GET("ws/issues.php?j_id={id}")
     public Call<Revista> find(@Path("id")String id);
 
 }

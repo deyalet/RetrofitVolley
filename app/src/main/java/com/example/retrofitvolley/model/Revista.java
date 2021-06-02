@@ -7,19 +7,18 @@ public class Revista {
     private int volumen;
     private int numero;
     private int anio;
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    private Date date;
+    private String date;
     private String titulo;
     private String doi;
     private String cover;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public int getId() {
         return id;
@@ -52,8 +51,6 @@ public class Revista {
     public void setAnio(int anio) {
         this.anio = anio;
     }
-
-
 
     public String getTitulo() {
         return titulo;

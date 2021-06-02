@@ -24,13 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void btnVolley(View view){
-        ObtenerDatos();
-    }
-    public void btnRetrofit(View view){
-        ObtenerDatos();
-    }
-    private void ObtenerDatos(){
-
         Intent intent = new Intent(MainActivity.this, MostrarVolley.class);
         EditText txtCod = (EditText)findViewById(R.id.txtCodigo);
         Bundle b = new Bundle();
@@ -38,5 +31,14 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(b);
         startActivity(intent);
     }
+    public void btnRetrofit(View view){
+        Intent intent = new Intent(MainActivity.this, MostrarRetrofit.class);
+        EditText txtCod = (EditText)findViewById(R.id.txtCodigo);
+        Bundle b = new Bundle();
+        b.putString("COD", txtCod.getText().toString());
+        intent.putExtras(b);
+        startActivity(intent);
+    }
+
 
 }

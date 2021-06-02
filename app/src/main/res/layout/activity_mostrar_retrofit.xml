@@ -7,6 +7,66 @@
     tools:context=".MostrarRetrofit">
 
     <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="195dp"
+        android:text="Título"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtDoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="148dp"
+        android:text="Doi"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtPublicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="243dp"
+        android:text="Fecha de publicación"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtVolumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="199dp"
+        android:text="Volumen:"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="244dp"
+        android:text="Numero"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,20 +84,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="51dp" />
 
-    <EditText
-        android:id="@+id/txtResultadoRT"
-        android:layout_width="405dp"
-        android:layout_height="410dp"
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="133dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="130dp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="154dp"
+        android:text="id:"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtAnio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:text="Año"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="100dp"
+        android:text="Cover"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
 </RelativeLayout>
