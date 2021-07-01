@@ -24,7 +24,7 @@ public class MostrarVolley extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar);
 
-        requestQueue = Volley.newRequestQueue(this);
+
         initUI();
         StringRequest();
     }
@@ -32,6 +32,7 @@ public class MostrarVolley extends AppCompatActivity {
         textView = findViewById(R.id.txtResultado);
     }
     public void StringRequest(){
+        requestQueue = Volley.newRequestQueue(this);
         Bundle bundle = this.getIntent().getExtras();
         String URL= " https://revistas.uteq.edu.ec/ws/issues.php?j_id="+ bundle.getString("COD");
         StringRequest request = new StringRequest(
@@ -40,6 +41,7 @@ public class MostrarVolley extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
                         textView.setText(response);
                     }
                 },
